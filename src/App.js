@@ -4,6 +4,7 @@ import LandingPage from './pages/LandingPage';
 import Checkout from "./pages/checkout/Checkout";
 import Register from "./pages/register/Register";
 import AddProduct from './admin/AddProduct';
+import Products from './admin/Products'
 import Users from './admin/Users';
 import Verify from './pages/Verify';
 import React, {useState, useEffect} from 'react';
@@ -67,7 +68,7 @@ console.log(items)
       <Routes>
 
         <Route path="/LogIn" element={<LogIn/>}/>
-        {localStorage.getItem('Items')?<Route path="/" element={<LandingPage /> }/>: ''}
+        <Route path="/" element={<LandingPage /> }/>
         <Route path="/register" element={<Register />}/>
         <Route path="/checkout" element={<Checkout/>}/>
         <Route path="/verify" element={<Verify/>} />

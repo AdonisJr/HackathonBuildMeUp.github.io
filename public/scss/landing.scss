@@ -7,7 +7,6 @@
 .landing {
     width: 100vw;
     min-height: 100vh;
-    background-color: black;
     .content {
         display: flex;
         justify-content: space-evenly;
@@ -17,9 +16,12 @@
         min-height: 80vh;
         padding: 1em;
         .items {
-            width: 30vw;
+            width: 20vw;
             min-height: 50vh;
             background-color: white;
+            &:hover {
+                box-shadow: 0 2px 14px 0 rgba(0, 0, 0, .9)
+            }
             .item_header {
                 display: flex;
                 width: 100%;
@@ -35,6 +37,18 @@
                 display: flex;
                 flex-direction: column;
                 padding: .5em;
+                .product_name {
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                .description {
+                    font-size: 12px;
+                    margin: 0 .5em;
+                }
+                .price {
+                    font-size: 16px;
+                    font-weight: bold;
+                }
             }
             .item_button {
                 padding: 0.5em;
