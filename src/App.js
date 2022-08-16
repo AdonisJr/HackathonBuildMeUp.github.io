@@ -22,7 +22,6 @@ function App() {
       const search = {
         search: 'a'
       }
-    
       try{
         inventoryApi.ListOfProducts(search).then(response=>{
           // setItems(response.data.data)
@@ -72,7 +71,6 @@ console.log(items)
         <Route path="/register" element={<Register />}/>
         <Route path="/checkout" element={<Checkout/>}/>
         <Route path="/verify" element={<Verify/>} />
-
         <Route path="/userList" element={<Users/>} />
         <Route path="/productList" element={<Products/>} />
         <Route path="/addProduct" element={<AddProduct/>} />
